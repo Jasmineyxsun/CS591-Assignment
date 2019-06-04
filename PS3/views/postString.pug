@@ -2,7 +2,10 @@ doctype html
 html
     head
         h1 #{postTest}
-        h1 #{length}
+        if length >= 0
+            h1 #{length}
+        else
+            h1 Invalid length
         link(rel='stylesheet', href='/stylesheets/style.css')
     body
         block content
