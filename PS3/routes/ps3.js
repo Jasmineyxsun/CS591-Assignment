@@ -7,11 +7,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/getTest', function(req,res, next) {
-  return res.render('getString', {getTest: 'Hey now'});
+  return res.render('string', {getTest: 'Hey now'});
 });
 router.post('/postTest', function(req,res, next) {
   let returnString = req.body.string;
-  return res.render('postString', {postTest: returnString, length:returnString.length});
+  return res.render('string', {postTest: returnString, length:returnString.length});
 });
 
 module.exports = router;
