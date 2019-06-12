@@ -1,6 +1,6 @@
-import { Singer } from './singer';
+import { Artist } from './artist';
 
-export const SINGERS: Singer[] = [
+export const ARTISTS: Artist[] = [
   { id: 892, name: 'Coldplay', num_fans: 13066002, num_albums: 66},
   { id: 893, name: 'Partenaire Particulier', num_fans: 10086, num_albums: 9 },
   { id: 894, name: 'Hollywood Porn Stars', num_fans: 2205, num_albums: 4 },

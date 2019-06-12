@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 import { AppComponent } from './app.component';
-import { SingersComponent } from './singers/singers.component';
+import { ArtistsComponent } from './artists/artists.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SingersComponent
+    ArtistsComponent
   ],
   imports: [
     BrowserModule,
@@ -18,3 +18,4 @@ import { SingersComponent } from './singers/singers.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

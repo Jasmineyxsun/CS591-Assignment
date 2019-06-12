@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-tour-of-singers": {
+    "angular-tour-of-artists": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-tour-of-singers",
+            "outputPath": "dist/angular-tour-of-artists",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-tour-of-singers:build"
+            "browserTarget": "angular-tour-of-artists:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-tour-of-singers:build:production"
+              "browserTarget": "angular-tour-of-artists:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-tour-of-singers:build"
+            "browserTarget": "angular-tour-of-artists:build"
           }
         },
         "test": {
@@ -106,15 +106,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-tour-of-singers:serve"
+            "devServerTarget": "angular-tour-of-artists:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-tour-of-singers:serve:production"
+              "devServerTarget": "angular-tour-of-artists:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-tour-of-singers"
+  "defaultProject": "angular-tour-of-artists"
 }

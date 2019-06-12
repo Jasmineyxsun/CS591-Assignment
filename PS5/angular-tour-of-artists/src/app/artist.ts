@@ -1,4 +1,4 @@
-export class Singer {
+export class Artist {
   id: number;
   name: string;
   num_fans: number;
