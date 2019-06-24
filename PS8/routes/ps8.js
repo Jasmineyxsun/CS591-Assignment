@@ -57,6 +57,7 @@ router.get('/:artist', function(req, res, next) {
                                             nb_fan: data.nb_fan,
                                             funFacts: returnData.text
                                         };
+                                        userData.wasCached = true;
                                         //store the object into the database
                                         mongoDB.insertRecord("artists", userData);
                                         res.send([data]);
