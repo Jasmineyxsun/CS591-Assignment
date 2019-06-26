@@ -29,7 +29,7 @@ router.get('/:artist', function(req, res, next) {
             //when the artist has already be stored into the database, get the information from the db instead of calling apis again
             if (result) {
                 console.log('Found');
-                res.send(result);
+                res.send([result]);
             //the artist is not in the db
             } else {
                 console.log('Not in db');
